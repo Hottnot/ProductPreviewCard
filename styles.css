@@ -18,14 +18,8 @@
 }
 
 /*beginning*/
-
-.container {
-    background-color: white;
-}
-
 .mainSection {
     background-color: hsl(30, 38%, 92%);
-    max-width: 1440px;
     display: grid;
     grid-template-areas: "left top right"
             "left putHere right"
