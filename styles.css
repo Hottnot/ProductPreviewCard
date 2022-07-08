@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+/*@import url('https: //fonts.google.com/specimen/Montserrat');
+@import url('https: //fonts.google.com/specimen/Fraunces');*/
+
 /*footer text generic*/
 .attribution {
     font-size: 11px;
@@ -33,6 +36,7 @@
 }
 
 .card {
+    border-radius: 15px;
     background-color: white;
     width: 600px;
     grid-area: putHere;
@@ -51,13 +55,63 @@
     margin-left: 50px;
     margin-top: 30px;
     grid-area: rightSide;
+    
+}
 
+.heading {
+    font-family: '';
+    font-weight: 700;
+    color: rgb(0, 0, 19);
 }
 
 .photo {
+    border-radius: 15px 0 0 15px;
     max-width: 300px;
 }
 
 .footer {
     grid-area: footer;
+}
+
+.mainText {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px;
+    fonts
+    color: hsl(228, 12%, 48%)
+}
+
+.priceSection {
+    color: darkcyan;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    justify-self: left;
+}
+
+.scratchedOut {
+    display: flex;
+    justify-self: end;
+    padding-left: 30px;
+}
+
+.addToCart {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: darkcyan;
+    color: antiquewhite;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cart {
+    padding: 15px;
 }
