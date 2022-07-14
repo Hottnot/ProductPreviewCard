@@ -32,7 +32,7 @@
 .card {
     border-radius: 15px;
     background-color: white;
-    width: 600px;
+    max-width: 600px;
     grid-area: putHere;
     display: grid;
     grid-template-areas: "leftSide rightSide";
@@ -49,8 +49,8 @@
 .writtenSection {
     margin-left: 30px;
     margin-top: 30px;
+    margin-right: 30px;
     grid-area: rightSide;
-    
 }
 
 .heading {
@@ -62,6 +62,11 @@
 .photo {
     border-radius: 15px 0 0 15px;
     max-width: 300px;
+}
+
+.photomobile {
+    border-radius: 15px 15px o o;
+    display: none;
 }
 
 .footer {
@@ -113,4 +118,53 @@
 
 button:hover {
     background-color: rgb(2, 37, 37);
+}
+
+@media (max-width: 595px) {
+    .mainSection {
+        background-color: hsl(30, 38%, 92%);
+        display: grid;
+        grid-template-areas: "topPhone"
+                "putHerePhone"
+                "footerPhone";
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .card {
+        grid-area: putherePhone;
+        display: grid;
+        grid-template-areas: "phonetop"
+        "phonebottom";
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .imageSection {
+        grid-area: phonetop;
+        display: flex;
+        justify-content: left;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .writtenSection {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-right: 30px;
+        grid-area: phonebottom;
+        display: grid;
+        justify-content: center;
+    }
+
+    .photo {
+        border-radius: 15px 0 0 15px;
+        max-width: 300px;
+        display: none;
+    }
+    
+    .photomobile {
+        border-radius: 15px 15px o o;
+        display: block;
+        max-width: 250px;
+    }
 }
